@@ -9,7 +9,6 @@ Find the largest palindrome made from the product of two 3-digit numbers.
  */
 
 #include <iostream>
-#include <vector>
 int main()
 {
     int largest{0};
@@ -17,22 +16,22 @@ int main()
     {
         for (int j = 0; j <= 999; j++)
         {
-            int num = i * j;
-            int n{0};
-            int rev{0};
+            int number = i * j;
+            int copy{0};
+            int reverse{0};
             int digit{0};
-            n = num;
+            copy = number;
             do
             {
-                digit = num % 10;
-                rev = (rev * 10) + digit;
-                num = num / 10;
-            } while (num != 0);
+                digit = number % 10;
+                reverse = (reverse * 10) + digit;
+                number = number / 10;
+            } while (number != 0);
 
-            if (n == rev)
+            if (copy == reverse)
             {
-                if (n > largest)
-                    largest = n;
+                if (copy > largest)
+                    largest = copy;
             }
         }
     }
