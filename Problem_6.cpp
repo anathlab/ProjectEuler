@@ -34,4 +34,5 @@ unsigned int squareOfTheSum(int quantity)
 int main()
 {
     std::cout << squareOfTheSum(100) - sumOfTheSquares(100) << std::endl;
+    return 0;
 }
