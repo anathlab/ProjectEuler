@@ -9,7 +9,6 @@ What is the 10 001st prime number?
 */
 
 #include <iostream>
-using namespace std;
 bool isPrime(int number) {
   for (int i = 2; i*i <= number; ++i) {
     if ((number % i) == 0) return false;
