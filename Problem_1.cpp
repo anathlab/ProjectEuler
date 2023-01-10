@@ -4,23 +4,26 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 */
 /*!
-*\author Anath
-*\date January 2023
-*/
-
+ *\author Anath
+ *\date January 2023
+ */
 
 #include <iostream>
-
-int main()
+long int MultiplesOfThreeOrFive(int maxRange)
 {
-    int sum{0};
-    for (int i = 1000; i > 0; i--)
+    int sum {0};
+    for (int i = maxRange - 1; i > 0; i--)
     {
         if (i % 3 == 0 || i % 5 == 0)
         {
             sum = sum + i;
         }
     }
-    std::cout << sum << std::endl;
+    return sum;
+}
+
+int main()
+{
+    std::cout << MultiplesOfThreeOrFive(1000) << std::endl;
     return 0;
 }
