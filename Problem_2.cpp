@@ -23,14 +23,13 @@ void sumOfEvenFibonacciNumbers(int range)
         z = x + y;
         x = y;
         y = z;
-        if (z % 2 == 0)
-            sum = sum + z;
+        if (z % 2 == 0) sum = sum + z;
     }
     std::cout << sum << std::endl;
 }
 
 int main()
 {
-    sumOfEvenFibonacciNumbers(4000000);
+    sumOfEvenFibonacciNumbers(4000000); //4613732
     return 0;
 }
