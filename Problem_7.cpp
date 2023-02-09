@@ -4,27 +4,38 @@ By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that 
 What is the 10 001st prime number?
 */
 /*!
-*\author Anath
-*\date January 2023
-*/
+ *\author Anath
+ *\date January 2023
+ */
 
 #include <iostream>
-bool isPrime(int number) {
-  for (int i = 2; i*i <= number; ++i) {
+
+bool isPrime(int number)
+{
+  for (int i = 2; i*i <= number; ++i)
+  {
     if ((number % i) == 0) return false;
   }
   return number > 1;
 }
 
-int main() {
+void whatIsTheNPrimeNumber(int n)
+{
   int i = 2;
-  for (int primes = 0; ; ++i) {
-    if (isPrime(i)) {
-      if (++primes == 10001) {
+  for (int primes = 1; ; ++i)
+  {
+    if (isPrime(i))
+    {
+      if (++primes == n)
+      {
         std::cout << i << "\n";
         break;
       }
     }
   }
+}
+
+int main() {
+  whatIsTheNPrimeNumber(10001); //104729
   return 0;
 }
