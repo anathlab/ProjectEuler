@@ -9,10 +9,11 @@ What is the smallest positive number that is evenly divisible by all of the numb
  */
 
 #include <iostream>
-int main()
+
+void smallestPositiveNumberEvenlyDivisibleByRange(int range)
 {
-    int i{20};
-    int j{20};
+    int i{range};
+    int j{range};
     int counter{0};
     while (i != 0)
     {
@@ -23,10 +24,16 @@ int main()
         }
         if (i != 0 && j % i != 0)
         {
-            j = j + 20;
-            i = 20;
+            j = j + range;
+            i = range;
             counter = 0;
         }
     }
     std::cout << j << std::endl;
+}
+
+int main()
+{
+    smallestPositiveNumberEvenlyDivisibleByRange(20); //232792560
+    return 0;
 }
