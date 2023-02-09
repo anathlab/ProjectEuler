@@ -41,6 +41,6 @@ void largestPalindromeProductOfTwoThreeDigitNumbers()
 
 int main()
 {
-    largestPalindromeProductOfTwoThreeDigitNumbers();
+    largestPalindromeProductOfTwoThreeDigitNumbers(); //906609
     return 0;
 }
