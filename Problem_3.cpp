@@ -9,10 +9,9 @@ What is the largest prime factor of the number 600851475143 ?
  */
 
 #include <iostream>
-int main()
-{
-    long number{600851475143};
-    for (long i = 2; i < number; ++i)
+
+void findPrimeFactors(unsigned long long number){
+ for (long i = 2; i < number; ++i)
     {
         while (number % i == 0)
         {
@@ -20,5 +19,10 @@ int main()
         }
     }
     std::cout << number << std::endl;
+}
+
+int main()
+{
+    findPrimeFactors(600851475143);
     return 0;
 }
