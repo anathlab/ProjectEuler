@@ -13,6 +13,7 @@ Find the difference between the sum of the squares of the first one hundred natu
  */
 
 #include <iostream>
+
 unsigned int sumOfTheSquares(int quantity)
 {
     unsigned int sum{0};
@@ -22,17 +23,19 @@ unsigned int sumOfTheSquares(int quantity)
     }
     return sum;
 }
+
 unsigned int squareOfTheSum(int quantity)
 {
-    unsigned int sum;
+    unsigned int sum{0};
     for (int i = 1; i <= quantity; i++)
     {
         sum = sum + i;
     }
     return sum * sum;
 }
+
 int main()
 {
-    std::cout << squareOfTheSum(100) - sumOfTheSquares(100) << std::endl;
+    std::cout << squareOfTheSum(100) - sumOfTheSquares(100) << std::endl; //25164150
     return 0;
 }
