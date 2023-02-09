@@ -9,9 +9,9 @@ Find the sum of all the multiples of 3 or 5 below 1000.
  */
 
 #include <iostream>
-long int MultiplesOfThreeOrFive(int maxRange)
+unsigned long long MultiplesOfThreeOrFive(int maxRange)
 {
-    int sum {0};
+    unsigned long long sum {0};
     for (int i = maxRange - 1; i > 0; i--)
     {
         if (i % 3 == 0 || i % 5 == 0)
