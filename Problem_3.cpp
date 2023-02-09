@@ -10,7 +10,8 @@ What is the largest prime factor of the number 600851475143 ?
 
 #include <iostream>
 
-void findPrimeFactors(unsigned long long number){
+void findPrimeFactors(unsigned long long number)
+{
  for (long i = 2; i < number; ++i)
     {
         while (number % i == 0)
