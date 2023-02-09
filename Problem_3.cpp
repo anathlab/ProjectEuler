@@ -24,6 +24,6 @@ void findPrimeFactors(unsigned long long number)
 
 int main()
 {
-    findPrimeFactors(600851475143);
+    findPrimeFactors(600851475143); //6857
     return 0;
 }
