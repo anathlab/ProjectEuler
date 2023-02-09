@@ -12,7 +12,8 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 #include <iostream>
 
-void sumOfEvenFibonacciNumbers(int range){
+void sumOfEvenFibonacciNumbers(int range)
+{
     unsigned long long sum{0};
     int x{0};
     int y{1};
