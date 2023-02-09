@@ -9,7 +9,8 @@ Find the largest palindrome made from the product of two 3-digit numbers.
  */
 
 #include <iostream>
-int main()
+
+void largestPalindromeProductOfTwoThreeDigitNumbers()
 {
     int largest{0};
     for (int i = 0; i <= 999; i++)
@@ -36,5 +37,10 @@ int main()
         }
     }
     std::cout << largest << std::endl;
+}
+
+int main()
+{
+    largestPalindromeProductOfTwoThreeDigitNumbers();
     return 0;
 }
