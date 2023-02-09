@@ -43,10 +43,7 @@ void largestProductInASeries(std::string digit, int n)
             int ia = (int)a;
             result = result * ia;
         }
-        if (y < result)
-        {
-            y = result;
-        }
+        if (y < result) y = result;
     }
     std::cout << y << std::endl;
 }
