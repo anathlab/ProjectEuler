@@ -10,7 +10,7 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 #include <iostream>
 
-void smallestPositiveNumberEvenlyDivisibleByRange(int range)
+int smallestMultiple(int range)
 {
     int i{range};
     int j{range};
@@ -29,11 +29,11 @@ void smallestPositiveNumberEvenlyDivisibleByRange(int range)
             counter = 0;
         }
     }
-    std::cout << j << std::endl;
+    return j;
 }
 
 int main()
 {
-    smallestPositiveNumberEvenlyDivisibleByRange(20); //232792560
+    std::cout << smallestMultiple(20) << std::endl; //232792560
     return 0;
 }
