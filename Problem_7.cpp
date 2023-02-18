@@ -19,7 +19,7 @@ bool isPrime(int number)
   return number > 1;
 }
 
-void whatIsTheNPrimeNumber(int n)
+int whatIsTheNPrimeNumber(int n)
 {
   int i = 2;
   for (int primes = 1; ; ++i)
@@ -28,14 +28,14 @@ void whatIsTheNPrimeNumber(int n)
     {
       if (++primes == n)
       {
-        std::cout << i << "\n";
         break;
       }
     }
   }
+  return i;
 }
 
 int main() {
-  whatIsTheNPrimeNumber(10001); //104729
+  std::cout << whatIsTheNPrimeNumber(10001) << std::endl; //104729
   return 0;
 }
