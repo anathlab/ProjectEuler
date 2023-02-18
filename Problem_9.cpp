@@ -14,7 +14,7 @@ Find the product abc.
 
 #include <iostream>
 
-void pythagoreanTriplet(){
+int pythagoreanTriplet(){
     int results;
     for(int a = 1; a < 1001; a++)
     {
@@ -25,11 +25,11 @@ void pythagoreanTriplet(){
             if((a*a + b*b) == (c*c)) results = a*b*c;
         }
     }
-    std::cout << results << std::endl;
+    return results;
 }
 
 int main() 
 {
-pythagoreanTriplet();
-return 0;
+    std::cout << pythagoreanTriplet() << std::endl; //31875000
+    return 0;
 }
