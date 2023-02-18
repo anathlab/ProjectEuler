@@ -12,7 +12,7 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 #include <iostream>
 
-void sumOfEvenFibonacciNumbers(int range)
+unsigned long long EvenFibonacciNumbers(int range)
 {
     unsigned long long sum{0};
     int x{0};
@@ -25,11 +25,11 @@ void sumOfEvenFibonacciNumbers(int range)
         y = z;
         if (z % 2 == 0) sum = sum + z;
     }
-    std::cout << sum << std::endl;
+    return sum;
 }
 
 int main()
 {
-    sumOfEvenFibonacciNumbers(4000000); //4613732
+    std::cout << EvenFibonacciNumbers(4000000) << std::endl; //4613732
     return 0;
 }
