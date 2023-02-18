@@ -10,9 +10,9 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 #include <iostream>
 
-void MultiplesOfThreeOrFive(int maxRange)
+unsigned int MultiplesOfThreeOrFive(int maxRange)
 {
-    unsigned long long sum {0};
+    unsigned int sum {0};
     for (int i = maxRange - 1; i > 0; i--)
     {
         if (i % 3 == 0 || i % 5 == 0)
@@ -20,11 +20,11 @@ void MultiplesOfThreeOrFive(int maxRange)
             sum = sum + i;
         }
     }
-    std::cout << sum << std::endl;
+    return sum;
 }
 
 int main()
 {
-    MultiplesOfThreeOrFive(1000); //233168
+    std::cout << MultiplesOfThreeOrFive(1000) << std::endl; //233168
     return 0;
 }
